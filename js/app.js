@@ -5,7 +5,7 @@
   var Flickr_API_KEY = "cbb9cfe0e72aea222eac937f10afc677";
   var Flickr_SIZE = "small_url";
   var Flickr_IMAGE_PER_PAGE = 200;
-  var ANIMATION_RATE = 1000;
+  var ANIMATION_RATE = 3000;
   var pictures = [];
 
   // when ready
