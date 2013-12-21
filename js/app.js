@@ -1,7 +1,7 @@
 (function(window) {
   "use strict";
 
-  var DEFAULT_TAGS = "Kate Upton";
+  var DEFAULT_TAGS = "Batman";
   var Flickr_API_KEY = "cbb9cfe0e72aea222eac937f10afc677";
   var Flickr_SIZE = "small_url";
   var Flickr_IMAGE_PER_PAGE = 200;
