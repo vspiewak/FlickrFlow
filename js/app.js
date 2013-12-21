@@ -1,7 +1,11 @@
 (function(window) {
   "use strict";
 
-  var DEFAULT_TAGS = "Batman";
+  var storage=$.localStorage;
+
+  var DEFAULT_TAGS_KEY = 'flickr.default.tags';
+  var DEFAULT_TAGS = storage.get(DEFAULT_TAGS_KEY) || "Batman";
+
   var Flickr_API_KEY = "cbb9cfe0e72aea222eac937f10afc677";
   var Flickr_SIZE = "small_url";
   var Flickr_IMAGE_PER_PAGE = 200;
@@ -145,6 +149,9 @@
       event.preventDefault();
 
       var tags = $('#tags').val() || DEFAULT_TAGS;
+      
+      storage.set(DEFAULT_TAGS_KEY, tags);
+
       load_pictures(tags);
      
     });
