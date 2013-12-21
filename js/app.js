@@ -52,6 +52,8 @@
 
         pictures = data.photos.photo;
         
+        $('#totals').text(data.photos.total);
+
         // build flickr url
         $.map(pictures, function(item){ build_flickr_url(item); });
         render_pictures(pictures);

@@ -32,12 +32,6 @@
           <a class="navbar-brand" href="#">Flickr Flow</a>
         </div>
         <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input id="tags" type="text" placeholder="Tags (ex: JQuery, Kate Upton)" class="form-control"></input>
-            </div>
-            <button id="search" type="submit" class="btn btn-success">Search</button>
-          </form>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Size <b class="caret"></b></a>
@@ -47,6 +41,13 @@
               </ul>
             </li>
           </ul>
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <span id="totals" class="badge"></span>
+              <input id="tags" type="text" placeholder="Tags (ex: JQuery, Kate Upton)" class="form-control"></input>
+            </div>
+            <button id="search" type="submit" class="btn btn-success">Search</button>
+          </form>
       </div><!--/.nav-collapse -->
      </div>
     </div>

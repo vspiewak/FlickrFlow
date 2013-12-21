@@ -2,6 +2,10 @@ html {
 	overflow-y: scroll;
 }
 
+#totals {
+	margin-right: 5px;
+}
+
 #tags {
   	width: 220px;
 }
