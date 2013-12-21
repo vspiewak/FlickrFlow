@@ -41,6 +41,7 @@
         nojsoncallback: 1,
         per_page: Flickr_IMAGE_PER_PAGE,
         api_key: Flickr_API_KEY,
+        safe_search: 3,
         method: "flickr.photos.search"
       })
       .success(function(data){
@@ -49,7 +50,6 @@
         
         // build flickr url
         $.map(pictures, function(item){ build_flickr_url(item); });
-
         render_pictures(pictures);
 
       });
