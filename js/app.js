@@ -26,7 +26,7 @@
        */
       photo.mini_url = "http://farm"+ photo.farm + ".staticflickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "s" + ".jpg";
       photo.small_url = "http://farm"+ photo.farm + ".staticflickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "q" + ".jpg";
-
+      photo.owner_url = "http://www.flickr.com/photos/" + photo.owner + "/"
       return photo;
       
     }
@@ -71,7 +71,7 @@
         
         if(photo && photo[Flickr_SIZE]) {
           var div = $("<div>").attr("class", "picture").css("position", "fixed").css("top", top + "px").css("left", total_width);
-          var link = $("<a>").attr("href", photo[Flickr_SIZE]).attr("target", "_blank");
+          var link = $("<a>").attr("href", photo.owner_url).attr("target", "_blank");
           var img = $("<img>").attr("src", photo[Flickr_SIZE]).attr("target", "_blank");
 
           link.append(img);
