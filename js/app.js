@@ -3,7 +3,7 @@
 
   var storage=$.localStorage;
 
-  var DEFAULT_TAGS_KEY = 'flickr.default.tags';
+  var DEFAULT_TAGS_KEY = 'flickrflow.default.tags';
   var DEFAULT_TAGS = storage.get(DEFAULT_TAGS_KEY) || "Batman";
 
   var Flickr_API_KEY = "cbb9cfe0e72aea222eac937f10afc677";
