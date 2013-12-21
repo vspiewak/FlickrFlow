@@ -19,7 +19,8 @@
   </head>
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -30,26 +31,24 @@
           </button>
           <a class="navbar-brand" href="#">Flickr Flow</a>
         </div>
-        <div class="collapse navbar-collapse">
-          <form class="navbar-form navbar-right" role="search" method="">
-            <div class="input-group">
-              <input id="tags" type="text" class="form-control" placeholder="Tags (ex: JQuery, Kate Upton)" name="srch-term" id="srch-term">
-              <div class="input-group-btn">
-                <button id="search" class="btn btn-success" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-              </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input id="tags" type="text" placeholder="Tags (ex: JQuery, Kate Upton)" class="form-control"></input>
             </div>
+            <button id="search" type="submit" class="btn btn-success">Search</button>
           </form>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Size <b class="caret"></b></a>
-             <ul class="dropdown-menu">
-              <li><a id="set-mini-size" href="#">Mini (75px)</a></li>
-              <li><a id="set-small-size" href="#" class="active">Small (150px)</a></li>
-             </ul>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Size <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a id="set-mini-size" href="#">Mini</a></li>
+                <li><a id="set-small-size" href="#">Small</a></li>
+              </ul>
             </li>
-          </ul> 
-        </div><!--/.nav-collapse -->
-      </div>
+          </ul>
+      </div><!--/.nav-collapse -->
+     </div>
     </div>
 
     <!-- the grid -->
