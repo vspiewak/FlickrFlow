@@ -1,0 +1,12 @@
+html {
+	overflow-y: scroll;
+}
+
+#tags {
+  	width: 220px;
+}
+
+#grid {
+	margin-top: 51px;
+	overflow-y: scroll;
+}
